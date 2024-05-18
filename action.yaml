@@ -4,6 +4,12 @@ branding:
   icon: thermometer
   color: blue
 
+inputs:
+  GITHUB_TOKEN:
+    description: Secret GitHub API token to use for making API requests.
+    default: ${{ github.token }}
+    required: false
+
 outputs:
   conclusion:
     description: Workflow conclusion
