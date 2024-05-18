@@ -1,0 +1,15 @@
+name: workflow-conclusion-action
+description: GitHub action to get workflow conclusion.
+branding:
+  icon: thermometer
+  color: blue
+
+inputs:
+
+outputs:
+  conclusion:
+    description: Workflow conclusion
+
+runs:
+  using: node20
+  main: ./dist/index.js
